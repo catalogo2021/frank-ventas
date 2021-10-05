@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <title>Amway</title>
-    
+
 </head>
 
 <body>
@@ -27,16 +27,19 @@
 
         <header class="container-fluid">
 
+            <!--Esto es menu Pc-->
 
-            <div class="row justify-content-lg-between justify-content-center align-items-center mb-5 py-3">
+
+            <div class="row d-none d-md-flex justify-content-lg-between justify-content-center align-items-center mb-5 py-3"
+                id="nav-pc">
 
                 <div class="col col-auto order-2 order-lg-1">
 
                     <ul class="nav">
-                        <li class="nav-item">
+                        <li class=" nav-item">
                             <a href="index.html" class="nav-link active">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="d-none d-md-flex nav-item">
                             <a href="nutricion.html" class="nav-link">Nutrición</a>
                         </li>
                         <li class="nav-item">
@@ -45,9 +48,7 @@
                         <li class="nav-item">
                             <a href="cuidado.html" class="nav-link">Cuidado Personal</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="hogar.html" class="nav-link">Hogar</a>
-                        </li>
+
                     </ul>
                 </div>
 
@@ -59,12 +60,14 @@
                     <ul class="nav">
 
                         <li class="nav-item">
+                            <a href="hogar.html" class="nav-link">Hogar</a>
+                        </li>
+
+                        <li class=" nav-item">
                             <a href="negocio.html" class="nav-link">Oportunidad de Negocio</a>
                         </li>
-                        <!--<li class="nav-item">
-                            <a href="amway.html" class="nav-link">Acerca de Amway</a>
-                        </li>-->
-                        <li class="nav-item">
+
+                        <li class="d-none d-md-flex nav-item">
                             <a href="contacto.html" class="nav-link">Contáctanos</a>
                         </li>
                     </ul>
@@ -74,8 +77,58 @@
 
 
 
-        </header>
+            <!--Esto es menu hamburguesa-->
 
+            <div class="pos-f-t d-md-none mb-5" id="nav-movil">
+
+                <div class="collapse" id="navbarToggleExternalContent">
+
+                    <div class="bg-dark p-4">
+
+                        <ul class="burger-links">
+
+                            <li class=" nav-item">
+                                <a href="index.html" class="nav-link active">Inicio</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="nutricion.html" class="nav-link">Nutrición</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="belleza.html" class="nav-link">Belleza</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cuidado.html" class="nav-link">Cuidado Personal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="hogar.html" class="nav-link">Hogar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="negocio.html" class="nav-link">Oportunidad de Negocio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">Contáctanos</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="text-end col-auto">
+                        <a href="#"><img class="logo" src="./img/AmwayA-Logo.png" alt="logo"></a>
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </header>
 
         <!--CONTACTO-->
 

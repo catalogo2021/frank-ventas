@@ -21,18 +21,23 @@
 
     <div class="container-fluid">
 
+        <!--HEADER-->
+
         <header class="container-fluid">
 
+            <!--Esto es menu Pc-->
 
-            <div class="row justify-content-lg-between justify-content-center align-items-center mb-5 py-3">
+
+            <div class="row d-none d-md-flex justify-content-lg-between justify-content-center align-items-center mb-5 py-3"
+                id="nav-pc">
 
                 <div class="col col-auto order-2 order-lg-1">
 
                     <ul class="nav">
-                        <li class="d-none d-md-flex nav-item">
+                        <li class=" nav-item">
                             <a href="index.html" class="nav-link active">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="d-none d-md-flex nav-item">
                             <a href="nutricion.html" class="nav-link">Nutrición</a>
                         </li>
                         <li class="nav-item">
@@ -41,9 +46,7 @@
                         <li class="nav-item">
                             <a href="cuidado.html" class="nav-link">Cuidado Personal</a>
                         </li>
-                        <li class="d-none d-md-flex nav-item">
-                            <a href="hogar.html" class="nav-link">Hogar</a>
-                        </li>
+
                     </ul>
                 </div>
 
@@ -54,12 +57,14 @@
                 <div class="col col-auto order-3 order-lg-3">
                     <ul class="nav">
 
-                        <li class="d-none d-md-flex nav-item">
+                        <li class="nav-item">
+                            <a href="hogar.html" class="nav-link">Hogar</a>
+                        </li>
+
+                        <li class=" nav-item">
                             <a href="negocio.html" class="nav-link">Oportunidad de Negocio</a>
                         </li>
-                        <!--<li class="d-none d-md-flex nav-item">
-                            <a href="amway.html" class="nav-link">Acerca de Amway</a>
-                        </li>-->
+
                         <li class="d-none d-md-flex nav-item">
                             <a href="contacto.html" class="nav-link">Contáctanos</a>
                         </li>
@@ -70,7 +75,60 @@
 
 
 
+            <!--Esto es menu hamburguesa-->
+
+            <div class="pos-f-t d-md-none mb-5" id="nav-movil">
+
+                <div class="collapse" id="navbarToggleExternalContent">
+
+                    <div class="bg-dark p-4">
+
+                        <ul class="burger-links">
+
+                            <li class=" nav-item">
+                                <a href="index.html" class="nav-link active">Inicio</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="nutricion.html" class="nav-link">Nutrición</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="belleza.html" class="nav-link">Belleza</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cuidado.html" class="nav-link">Cuidado Personal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="hogar.html" class="nav-link">Hogar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="negocio.html" class="nav-link">Oportunidad de Negocio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">Contáctanos</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="text-end col-auto">
+                        <a href="#"><img class="logo" src="./img/AmwayA-Logo.png" alt="logo"></a>
+                    </div>
+                </nav>
+
+            </div>
+
+
         </header>
+
+        <!--CONTAINER-->
 
 
         <section class="products-masonry-filter  mt-4 mt-lg-5 mb-4 border-top border-bottom py-3">
@@ -100,6 +158,8 @@
             </ul>
         </section>
 
+        <!--PRODUCTOS-->
+
         <div class="products-masonry">
 
             <div class="tab-content">
@@ -120,8 +180,10 @@
                                     <img src="./img/home/5.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">L.O.C. Limpiador Concentrado Multiusos</h5>
-                                        <p class="card-text">NUESTRO LIMPIADOR MÁS VERSÁTIL – Con poder limpiador increíble en
-                                            una fórmula suave y concentrada para tratar cualquier superficie lavable, incluso
+                                        <p class="card-text">NUESTRO LIMPIADOR MÁS VERSÁTIL – Con poder limpiador
+                                            increíble en
+                                            una fórmula suave y concentrada para tratar cualquier superficie lavable,
+                                            incluso
                                             tus manos.</p>
                                     </div>
                                 </div>
@@ -148,23 +210,25 @@
                                     <img src="./img/home/7.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Amway Home™ Rociador prelavado</h5>
-                                        <p class="card-text">EL QUITAMANCHAS DEFINITIVO – Un solo rociado ayuda a eliminar
+                                        <p class="card-text">EL QUITAMANCHAS DEFINITIVO – Un solo rociado ayuda a
+                                            eliminar
                                             manchas
                                             difíciles.</p>
                                     </div>
                                 </div>
-        
+
                                 <div class="card">
                                     <img src="./img/home/9.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Amway Home™ Suavizante de telas – Aroma floral</h5>
-                                        <p class="card-text">MÁS SUAVIDAD, MENOS ESTÁTICA – Suaviza de manera natural para un
+                                        <p class="card-text">MÁS SUAVIDAD, MENOS ESTÁTICA – Suaviza de manera natural
+                                            para un
                                             lavado
                                             limpio y cómodo. Aroma floral fresco.
                                         </p>
                                     </div>
                                 </div>
-                            
+
                             </div>
 
                             <div class="col-12 col-md-6">
@@ -173,7 +237,8 @@
                                     <img src="./img/home/8.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Amway Home™ Blanqueador para todo tipo de telas</h5>
-                                        <p class="card-text">BLANCOS MÁS BLANCOS, SEGURO PARA COLORES – Hecho con ingredientes
+                                        <p class="card-text">BLANCOS MÁS BLANCOS, SEGURO PARA COLORES – Hecho con
+                                            ingredientes
                                             potentes para eliminar las peores manchas.
                                         </p>
                                     </div>
@@ -183,16 +248,18 @@
                                     <img src="./img/home/1.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">SA8 Detergente Líquido Concentrado para Ropa</h5>
-                                        <p class="card-text">ELIMINA LAS MANCHAS DIFÍCILES, NATURALMENTE – Descubre nuestra
-                                            solución quitamanchas más fuerte disponible: con triple concentración para dejar tus
+                                        <p class="card-text">ELIMINA LAS MANCHAS DIFÍCILES, NATURALMENTE – Descubre
+                                            nuestra
+                                            solución quitamanchas más fuerte disponible: con triple concentración para
+                                            dejar tus
                                             ropas suaves y limpias. Aroma floral fresco.</p>
                                     </div>
                                 </div>
 
                             </div>
-        
+
                         </div>
-               
+
                     </div>
 
 
@@ -212,10 +279,13 @@
                                 <div class="card">
                                     <img src="./img/home/3.jfif" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="card-title">Amway Home™ Líquido lavavajillas Dish Drops™ – Aroma original
+                                        <h5 class="card-title">Amway Home™ Líquido lavavajillas Dish Drops™ – Aroma
+                                            original
                                         </h5>
-                                        <p class="card-text">UNA SOLA GOTA LIMPIA MUCHO – Poder limpiador que arremete contra la
-                                            grasa y suciedad. Hecho con aloe vera y extracto de shiso que ayuda a mantener manos
+                                        <p class="card-text">UNA SOLA GOTA LIMPIA MUCHO – Poder limpiador que arremete
+                                            contra la
+                                            grasa y suciedad. Hecho con aloe vera y extracto de shiso que ayuda a
+                                            mantener manos
                                             suaves. Aroma original limpio y vigorizante.</p>
                                     </div>
                                 </div>
@@ -241,7 +311,8 @@
                                     <img src="./img/home/6.jfif" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Pursue™ Limpiador desinfectante concentrado</h5>
-                                        <p class="card-text">DESINFECTAR PARA PROTEGER – Limpia y desinfecta una variedad de
+                                        <p class="card-text">DESINFECTAR PARA PROTEGER – Limpia y desinfecta una
+                                            variedad de
                                             superficies
                                             para mantener tu hogar saludable y feliz.</p>
                                     </div>
@@ -327,6 +398,8 @@
 
     </div>
 
+    <!--CONTACTO-->
+
     <div class="section contact bg-dark mt-5">
         <div class="container-fluid">
             <div class="row py-5 justify-content-center align-items-center">
@@ -339,6 +412,8 @@
             </div>
         </div>
     </div>
+
+    <!--FOOTER-->
 
     <div class="footer bg-primary">
         <div class="container-fluid">
@@ -380,7 +455,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
 
 
