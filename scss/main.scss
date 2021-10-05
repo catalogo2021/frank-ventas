@@ -1,5 +1,6 @@
 $primary:#806a41;
 $dark: #1a1a1a;
+$secundary: #eee;
 $border-color: #eee;
 $carousel-transition: transform 10s ease, opacity .2s ease-out;
 
@@ -140,7 +141,24 @@ p {
         font-size: 12px;
     }
 }
+#contacto{
+    width: 100%;
+    min-height: 800px;
+    display: block;
+    background-color: $dark;
+    margin:0 0 0 0;
+    padding: 0;
+    
 
+    i{
+        color: $border-color;
+
+    }
+    h4{
+        color: $border-color;
+    }
+    
+}
 #carousel{
     display: flex;
     justify-content: center;
@@ -166,6 +184,7 @@ p {
     color: $border-color;
 }
 
+
 #nav-pc{
     display: flex;
 }
@@ -185,6 +204,11 @@ p {
 
 
 @media (max-width: 600px) {
+
+    header{
+        background-color: $dark;
+        width: 100%;
+    }
 
     #nav-pc{
         display: none;

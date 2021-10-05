@@ -12128,6 +12128,21 @@ p:last-child {
   font-size: 12px;
 }
 
+#contacto {
+  width: 100%;
+  min-height: 800px;
+  display: block;
+  background-color: #1a1a1a;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+#contacto i {
+  color: #eee;
+}
+#contacto h4, #contacto .h4 {
+  color: #eee;
+}
+
 #carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12177,6 +12192,11 @@ p:last-child {
 }
 
 @media (max-width: 600px) {
+  header {
+    background-color: #1a1a1a;
+    width: 100%;
+  }
+
   #nav-pc {
     display: none;
   }
