@@ -14,6 +14,46 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="./css/main.css">
 
+    <script type="text/javascript">
+        function playPause() {
+            var reproduciendo = true;
+            var pista = document.getElementById('nosemeocurre');
+            var boton_play_pause = document.getElementById('boton_play_pause');
+            boton_play_pause.onclick = function () {
+                if (reproduciendo) {
+                    reproduciendo = false;
+                    pista.pause();
+                    this.value = 'PLAY';
+                } else {
+                    reproduciendo = true;
+                    pista.play();
+                    this.value = 'PAUSE';
+                }
+            }
+        }
+
+        window.onload = function () {
+            playPause();
+        }
+    </script>
+
+    <style type="text/css">
+        input[type=button] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            width: 60px;
+            height: 30px;
+            background: #806a41;
+            border-radius: 10px;
+            text-align: center;
+            color: #eee;
+            font-size: 10px;
+           
+        }
+    </style>
+
     <title>Amway - Negocio</title>
 
 </head>
@@ -44,6 +84,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="cuidado.html" class="nav-link">Cuidado Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <audio id="nosemeocurre" src="./videos/Boehm.mp3" autoplay> Si no le
+                            funciona, use otro navegador.</audio>
+                        <input type="button" id="boton_play_pause" value="PAUSE" />
                     </li>
 
                 </ul>
@@ -377,7 +422,7 @@
 
 
                 <div class="col-md-4 text-center text-md-left order-md-0 order-1  my-4 my-md-0">
-                    <p class="text-white mb-0"><small>&copy; Todos los derechos reservados.</small></p>
+                    <p class="text-white mb-0"><small>&copy; Todos los derechos reservados The Shark Community.</small></p>
                 </div>
 
 
